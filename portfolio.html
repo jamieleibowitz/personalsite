@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <style>
-
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 30px;
+    }
+    #title {
+        display: flex;
+        flex-grow: 1;
+    }
+    #nav-bar {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        list-style-type: none;
+        flex-grow: 3;
+        padding: 0px 10px 0px 10px;
+    }
+    .navbutton {
+        margin: 0px;
+        display: flex;
+    }
+    body {
+        padding: 0px 50px 0px 50px;
+    }
+    p {
+        font-size: 20px;
+    }
 </style>
 <div id = "main">
-    <header id = "pageTop">
-        Jamie Leibowitz's Portfolio Site!
+    <header>
+        <div id="title">
+            Jamie Leibowitz's Portfolio Site!
+        </div>
+        <ul id="nav-bar">
+            <li> <a href="mainpage.html" id="about-button" class="navbutton">About</a></li>
+            <li> <a href="portfolio.html" id="portfolio-button" class="navbutton">Portfolio</a></li>
+            <li> <a href="links.html" id="links-button" class="navbutton">Links</a></li>
+        </ul>
     </header>
-    <div id = "navbar">
-        <div id = "aboutButton" class = "navbutton">About</div>
-        <div id = "portfolioButton" class = "navbutton">Portfolio</div>
-        <div id = "linksButton" class = "navbutton">Links</div>
-    </div>
     <body id = "portfolio">
         <h1>Portfolio</h1>
         <div id = "webdevproj">
             <h2>Web Dev Projects</h2>
             <h3>Schmoop: SAT Practice Problems</h3>
+            <p></p>
+            <h3>Personal: This Website!</h3>
             <p></p>
             <!--Add in monikers later<h3>Monikers</h3>
             <p></p> -->
@@ -23,8 +55,6 @@
         <div id = "othercoding">
             <h2>Other Coding Projects</h2>
             <h3>Personal: DnD 5e Druid Beast Shape Assistant</h3>
-            <p></p>
-            <h3>Personal: This Website!</h3>
             <p></p>
             <h3>NU Research: Atlasify</h3>
             <p></p>
@@ -39,8 +69,6 @@
         <div id = "maker">
             <h2>Maker Technology</h2>
             <h3>Adler: Live Video Feed System</h3>
-            <p></p>
-            <h3>Personal: RepRap 3D Printer</h3>
             <p></p>
         </div>
     </body>
