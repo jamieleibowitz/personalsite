@@ -27,3 +27,31 @@ body {
 p {
     font-size: 20px;
 }
+.proj-category {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.proj-category-button {
+    background-color: gray;
+    display: flex;
+}
+.proj-title {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+.proj-descript {
+    overflow: hidden;
+}
+ul {
+    list-style-type: none;
+}
+button {
+    border: none;
+    outline: none;
+    display: flex;
+}
