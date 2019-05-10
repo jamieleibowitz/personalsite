@@ -54,4 +54,5 @@ button {
     border: none;
     outline: none;
     display: flex;
+    cursor: pointer;
 }
