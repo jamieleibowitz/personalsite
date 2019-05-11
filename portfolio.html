@@ -13,40 +13,77 @@
     </header>
     <body id = "portfolio">
         <h1>Portfolio</h1>
-        <script src="collapse.js">collapse("proj-category-button")</script>
-        <script src="collapse.js">collapse("proj-title")</script>
-        <div id="webdevproj" class="proj-category">
-            <button class="proj-category-button"><h2>Web Dev Projects</h2></button>
+        <ul id="toc">
+            <strong>Table of Contents</strong>
             <ul>
-                <li class="proj-title"><button><h3>Schmoop: SAT Practice Problems</h3></button>
-                <p class="proj-descript"></p></li>
-                <li class="proj-title"><button><h3>Personal: This Website!</h3></button>
-                <p class="proj-descript"></p></li>
+                <li><a href="#webdevproj">Web Dev Projects</a></li>
+                <ul>
+                    <li><a href="#thiswebsite">Personal: This Website!</a></li>
+                    <li><a href="#schmoopsat">Schmoop: SAT Practice Problems</a></li>
+                </ul>
+                <li><a href="#othercoding">Other Coding Projects</a></li>
+                <ul>
+                    <li><a href="#beastshape">Personal: DnD 5e Druid Beast Shape Assistant</a></li>
+                    <li><a href="#atlasify">NU Research: Atlasify</a></li>
+                    <li><a href="#laserspectrometer">Fermilab: Laser Spectrometer Analysis</a></li>
+                    <li><a href="#vacuumsim">Fermilab: Vacuum Simulations</a></li>
+                </ul>
+                <li><a href="#maker">Maker Technology</a></li>
+                <ul>
+                    <li><a href="#adlervideofeed">Adler Planetarium: Live Video Feed System</a></li>
+                </ul>
+            </ul>
+        </ul>
+        <div id="webdevproj" class="proj-category">
+            <h2>Web Dev Projects</h2>
+            <ul>
+                <li id="thiswebsite" class="proj-title"><h3>Personal: This Website! (2019)</h3>
+                <p class="proj-descript">This project used my skills in HTML and CSS. I also aimed to provide myself with a way to put all of my various online presences in one place for the purposes of seeking employment and also showing off things that I've done that are unrelated to tech or engineering. <br>
+                Outcome: A website that showcases my ability to create a website and acts as a central repository for projects I'd like to share with potential employers and ways to contact me. Take a look around! Click the links! Find out more about me!</p></li>
+                <a href="#toc">Back to top</a>
+                <li id="schmoopsat" class="proj-title"><h3>Schmoop: SAT Practice Problems (2013)</h3>
+                <p class="proj-descript">For this part-time position, I used Javascript and HTML to create web pages containing practice math problems to assist with learning high school-level math concepts.<br>Outcome: This position deepened my understanding of object-oriented programming, and also helped me to learn Javascript in a practical and professional setting. </p></li>
+                <a href="#toc">Back to top</a>
                 <!--Add in monikers later<h3>Monikers</h3>
                 <p></p> -->
             </ul>
         </div>
         <div id = "othercoding" class="proj-category">
-            <button class="proj-category-button"><h2>Other Coding Projects</h2></button>
+            <h2>Other Coding Projects</h2>
             <ul>
-                <li class="proj-title"><button><h3>Personal: DnD 5e Druid Beast Shape Assistant</h3></button>
-                <p class="proj-descript"></p></li>
-                <li class="proj-title"><button><h3>NU Research: Atlasify</h3></button>
-                <p class="proj-descript"></p></li>
-                <!--https://www-users.cs.umn.edu/~bhecht/publications/bhecht_sigir2012_ExpSpatialization_SRplusE.pdf-->
-                <li class="proj-title"><button><h3>Fermilab: Laser Spectrometer Analysis</h3></button>
-                <p class="proj-descript"></p></li>
-                <li class="proj-title"><button><h3>Fermilab: Vacuum Simulations</h3></button>
-                <p class="proj-descript"></p></li>
+                <li id="beastshape" class="proj-title"><h3>Personal: DnD 5e Druid Beast Shape Assistant (2019)</h3>
+                <p class="proj-descript">This project had two purposes. The first was to refresh myself on C++ coding for a position I was applying for at the time. The second was that in a DnD game I've been playing with my friends, I am playing a druid and was getting annoyed at trying to figure out what I could and couldn't turn into, what would be the reason to pick a specific animal to turn into, and so on. So, I made a helper program! <br>
+                Outcome: I relearned C++ after about six years of not using it at all, created a program that takes in druid level and circle and generates a list of all possible beast shapes to take, what CR they have, Armor Class, HP, and movement speeds.</p></li>
+                <a href="#toc">Back to top</a>
+                <li id="atlasify" class="proj-title"><h3>NU Research: Atlasify (2013)</h3>
+                <p class="proj-descript">During the summer of 2013, I worked with Douglas Downey and several of his grad students on a program for the visualization of large amounts of data. When I joined, the project had already yielded a published paper, and Professor Downey wanted me to help to expand the types of data visualizations Atlasify could display. <br>
+                Outcome: While the timeframe of my work there allowed for little in the way of progress on the overall project, it was my first experience with SQL Databases, as that was where Atlasify drew its data from most directly. If you'd like to see the paper that was published, here's a link that gives an <a target="blank" href="https://www-users.cs.umn.edu/~bhecht/publications/bhecht_sigir2012_ExpSpatialization_SRplusE.pdf">overview of the Atlasify project.</a></p></li>
+                <a href="#toc">Back to top</a>
+                <li id="laserspectrometer" class="proj-title"><h3>Fermilab: Laser Spectrometer Analysis (2015)</h3>
+                <p class="proj-descript">My role at Fermilab was primarily that of a junior level Mechanical Engineer, but occasionally I worked on projects that required custom coding to simplify and present large quantities of data. This project analyzed data from a surface scan of a Tungsten-Rhenium wire which broke in the accelerator in order to determine the cause of failure and develop future best practices for preparing and installing these wires. The data from the laser spectrometer was output in a csv file, which I then used MATLAB to filter and analyze. <br>
+                Outcome: It was determined that the cause of failure was radiation causing the material to fracture prematurely, and along with the tension the wire was required to maintain, it snapped much sooner than expected. These results were published in a report on Fermilab's DocDB. I got some more experience analyzing data and developed my own custom filtering program for the scans in MATLAB, and had it output the surface roughness in terms of average displacement from centerline, standard deviations, and RMS method. After developing my code, we discovered that the laser spectrometer's host program which made the csvs in the first place also had functions to do the same thing I had coded. While it is never a good thing to reinvent the wheel, I was proud to find that my code returned the same results as the professionally made program.</p>
+                <figure id="septum-images">
+                    <div id="image-container"><img id="septumimage" src="images/septum wire.jpg" alt="A metal device with a row of wires running down its length. The remnants of a broken wire can be faintly seen at the end">
+                    <img id="wireimage" src="images/septum comparison.PNG" alt="Laser spectrometer scans of two wires. On the left is a new one, and on the right is the broken one being studied."></div>
+                    <figcaption>Left: an image of the septum. The broken wire can faintly be seen at the end of the septum. Right: A visual comparison of a new wire versus the wire that snapped</figcaption>
+                </figure></li>
+                <a href="#toc">Back to top</a>
+                <li id="vacuumsim" class="proj-title"><h3>Fermilab: Vacuum Simulations (2015)</h3>
+                <p class="proj-descript">This project involved using a pre-made numerical analysis program simulating the inside of a device another engineer had designed in CAD to determine what the air pressure inside the device would be at specific points in the chamber. After using the program, I was asked to check the program's numbers using more direct computation methods. <br>
+                Outcome: Using a Monte-Carlo analysis program, I found that the amount of surface area inside the device would lead to an unacceptably high pressure for the required vacuum level. My own "hand-checking" calculations using MATLAB involved the numerical solving of differential equations and some interesting applications of fluid dynamics. The project was never completed due to lack of funding, unfortunately.</p></li>
+                <a href="#toc">Back to top</a>
             </ul>
             <!--Add in EQ vst once finished <h3>EQ Analysis VST Plugin</h3>
             <p></p>-->
         </div>
         <div id = "maker" class="proj-category">
-            <button class="proj-category-button"><h2>Maker Technology</h2></button>
+            <h2>Maker Technology</h2>
             <ul>
-                <li class="proj-title"><button><h3>Adler: Live Video Feed System</h3></button>
-                <p class="proj-descript"></p></li>
+                <li id="adlervideofeed" class="proj-title"><h3>Adler: Live Video Feed System (2013)</h3>
+                <p class="proj-descript">A live video feed system for high altitude balloons. This project had two major parts. First, the actual transmitter and receiver: the other interns and I connected a video transmitter to a GoPro camera attached to the balloon. The transmissions were received by a Yagi directional antenna, connected directly to a computer monitor to display the incoming data. <br>
+                Next, the automated antenna pointing system. This system used a custom-built frame operated by two servo motors acting to create a system of spherical coordinates - one servo for the "theta" angle and one for "phi". The servos were controlled by an Arduino microcontroller which received data from the balloon regarding GPS coordinates (received by a Raspberry Pi), altitude, and signal strength. Using these three types of data, the arduino effectively calculated the approximate position of the balloon in the sky relative to the location of the antenna and directed the servos to point the Yagi antenna at the balloon, with a correction algorithm to obtain maximum signal strength. <br>
+                Outcome: Tons of experience using maker technologies, RF equipment, microcontroller programming, data analysis, and mechanical design.</p></li>
+                <a href="#toc">Back to top</a>
             </ul>
         </div>
     </body>
