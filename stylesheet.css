@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Ubuntu');
+html {
+    background-color: #89CDB4;
+}
 header {
     width: 100%;
     display: flex;
@@ -9,7 +12,7 @@ header {
     font-weight: 'bold';
 }
 body {
-    padding: 0px 50px 0px 50px;
+    margin: 0px 50px 0px 50px;
 }
 p {
     font-size: 20px;
@@ -39,6 +42,15 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+#main {
+    background-color: #89CDB4;
 }
 #title {
     display: flex;
@@ -116,7 +128,7 @@ figure {
         font-size: 20px;
     }
     body {
-        padding: 0px;
+        margin: 0px;
     }
     h2 {
         font-size: 40px;
