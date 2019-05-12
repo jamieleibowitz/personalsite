@@ -57,10 +57,11 @@ figure {
     flex-direction: row;
     justify-content: space-evenly;
 }
+#links-container {
+    display: flex;
+}
 #mepic {
     max-width: 400px;
-    height: 400px;
-    overflow: hidden;
 
 }
 .navbutton {
@@ -83,6 +84,9 @@ figure {
 }
 .proj-descript {
     padding: 10px;
+}
+.link-icon {
+    max-height: 50px;
 }
 @media screen and (max-width: 600px) {
     header {
