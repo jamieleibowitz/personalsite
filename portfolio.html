@@ -18,13 +18,14 @@
             <ul>
                 <li><a href="#webdevproj">Web Dev Projects</a></li>
                 <ul>
+                    <li><a href="#eqanalyze">Personal: Music EQ Analyzer</a></li>
                     <li><a href="#thiswebsite">Personal: This Website!</a></li>
                     <li><a href="#schmoopsat">Schmoop: SAT Practice Problems</a></li>
+                    <li><a href="#atlasify">NU Research: Atlasify</a></li>
                 </ul>
                 <li><a href="#othercoding">Other Coding Projects</a></li>
                 <ul>
                     <li><a href="#beastshape">Personal: DnD 5e Druid Beast Shape Assistant</a></li>
-                    <li><a href="#atlasify">NU Research: Atlasify</a></li>
                     <li><a href="#laserspectrometer">Fermilab: Laser Spectrometer Analysis</a></li>
                     <li><a href="#vacuumsim">Fermilab: Vacuum Simulations</a></li>
                 </ul>
@@ -37,15 +38,21 @@
         <div id="webdevproj" class="proj-category">
             <h2>Web Dev Projects</h2>
             <ul>
+                <li id="eqanalyze" class="proj-title"><h3>Personal: Music EQ Analyzer (2019)</h3>
+                <p class="proj-descript">This project combines two passions of mine: tech and music. I've produced music for most of my teen and adult life, but I've always felt unsatisfied with my mixing and mastering skills when I put my songs alongside professionally produced ones. This project was intended to help with that by allowing me to plot my music's EQ profile on the same graph as my reference tracks so that I could more closely approach their sound by adjusting my song to more closely match the other's EQ plot.<br>
+                Outcome: This program achieved its purpose of helping me with my music, as well as being a solid demonstration of my ability to code in Python. I gained experience using several well-known modules, such as scipy, numpy, matplotlib, and tkinter. It also required some mathematical knowledge to understand how Fourier Transforms and specifically Fast Fourier Transform functions work, as well as some problem-solving as running a single fft call on large quantities of data in python causes memory errors. The solution was to fourier transform small chunks of the song and then average them to get the overall result. <a target="blank" href="https://github.com/jamieleibowitz/eqanalyzer">Check out the code for my EQ Analyzer on Github!</a> Also, <a target="blank" href="https://soundcloud.com/experimentalsoundlab/the-jacobs-ladder">check out my latest track on Soundcloud!</a></p></li>
+                <a href="#toc">Back to top</a>
                 <li id="thiswebsite" class="proj-title"><h3>Personal: This Website! (2019)</h3>
                 <p class="proj-descript">This project used my skills in HTML and CSS. I also aimed to provide myself with a way to put all of my various online presences in one place for the purposes of seeking employment and also showing off things that I've done that are unrelated to tech or engineering. <br>
-                Outcome: A website that showcases my ability to create a website and acts as a central repository for projects I'd like to share with potential employers and ways to contact me. Take a look around! Click the links! Find out more about me!</p></li>
+                Outcome: A website that showcases my ability to create a website and acts as a central repository for projects I'd like to share with potential employers and ways to contact me. Take a look around! Click the links! Find out more about me! Also, <a target="blank" href="https://github.com/jamieleibowitz/personalsite">check out the code for this website on github!</a></p></li>
                 <a href="#toc">Back to top</a>
                 <li id="schmoopsat" class="proj-title"><h3>Schmoop: SAT Practice Problems (2013)</h3>
                 <p class="proj-descript">For this part-time position, I used Javascript and HTML to create web pages containing practice math problems to assist with learning high school-level math concepts.<br>Outcome: This position deepened my understanding of object-oriented programming, and also helped me to learn Javascript in a practical and professional setting. </p></li>
                 <a href="#toc">Back to top</a>
-                <!--Add in monikers later<h3>Monikers</h3>
-                <p></p> -->
+                <li id="atlasify" class="proj-title"><h3>NU Research: Atlasify (2013)</h3>
+                <p class="proj-descript">During the summer of 2013, I worked with Douglas Downey and several of his grad students on a program for the visualization of large amounts of data. When I joined, the project had already yielded a published paper, and Professor Downey wanted me to help to expand the types of data visualizations Atlasify could display. <br>
+                Outcome: This was my first experience with SQL Databases, as that was where Atlasify drew its data from most directly. I was primarily writing queries for the database to test the functions of the app in new situations. If you'd like to see the paper that was published, here's a link that gives an <a target="blank" href="https://www-users.cs.umn.edu/~bhecht/publications/bhecht_sigir2012_ExpSpatialization_SRplusE.pdf">overview of the Atlasify project.</a></p></li>
+                <a class="btt" href="#toc">Back to top</a>
             </ul>
         </div>
         <div id = "othercoding" class="proj-category">
@@ -53,11 +60,7 @@
             <ul>
                 <li id="beastshape" class="proj-title"><h3>Personal: DnD 5e Druid Beast Shape Assistant (2019)</h3>
                 <p class="proj-descript">This project had two purposes. The first was to refresh myself on C++ coding for a position I was applying for at the time. The second was that in a DnD game I've been playing with my friends, I am playing a druid and was getting annoyed at trying to figure out what I could and couldn't turn into, what would be the reason to pick a specific animal to turn into, and so on. So, I made a helper program! <br>
-                Outcome: I relearned C++ after about six years of not using it at all, created a program that takes in druid level and circle and generates a list of all possible beast shapes to take, what CR they have, Armor Class, HP, and movement speeds.</p></li>
-                <a class="btt" href="#toc">Back to top</a>
-                <li id="atlasify" class="proj-title"><h3>NU Research: Atlasify (2013)</h3>
-                <p class="proj-descript">During the summer of 2013, I worked with Douglas Downey and several of his grad students on a program for the visualization of large amounts of data. When I joined, the project had already yielded a published paper, and Professor Downey wanted me to help to expand the types of data visualizations Atlasify could display. <br>
-                Outcome: While the timeframe of my work there allowed for little in the way of progress on the overall project, it was my first experience with SQL Databases, as that was where Atlasify drew its data from most directly. If you'd like to see the paper that was published, here's a link that gives an <a target="blank" href="https://www-users.cs.umn.edu/~bhecht/publications/bhecht_sigir2012_ExpSpatialization_SRplusE.pdf">overview of the Atlasify project.</a></p></li>
+                Outcome: I relearned C++ after about six years of not using it at all, created a program that takes in druid level and circle and generates a list of all possible beast shapes to take, what CR they have, Armor Class, HP, and movement speeds. If you're interested in the code or trying this utility out for yourself, here's a <a target="blank" href="https://github.com/jamieleibowitz/beastshape">link to the Beast Shape code on Github!</a></p></li>
                 <a class="btt" href="#toc">Back to top</a>
                 <li id="laserspectrometer" class="proj-title"><h3>Fermilab: Laser Spectrometer Analysis (2015)</h3>
                 <p class="proj-descript">My role at Fermilab was primarily that of a junior level Mechanical Engineer, but occasionally I worked on projects that required custom coding to simplify and present large quantities of data. This project analyzed data from a surface scan of a Tungsten-Rhenium wire which broke in the accelerator in order to determine the cause of failure and develop future best practices for preparing and installing these wires. The data from the laser spectrometer was output in a csv file, which I then used MATLAB to filter and analyze. <br>
@@ -80,8 +83,6 @@
                 </figure>
                 <a class="btt" href="#toc">Back to top</a>
             </ul>
-            <!--Add in EQ vst once finished <h3>EQ Analysis VST Plugin</h3>
-            <p></p>-->
         </div>
         <div id = "maker" class="proj-category">
             <h2>Maker Technology</h2>
