@@ -16,11 +16,15 @@
         <ul id="toc">
             <strong>Table of Contents</strong>
             <ul>
+                <li><a href="#professional">Professional Work</a></li>
+                <ul>
+                    <li><a href="#vibes">Vibes: Mobile Marketing Software Development</a></li>
+                </ul>
                 <li><a href="#webdevproj">Web Dev Projects</a></li>
                 <ul>
+                    <li><a href="#roll20-armour-astir">Personal: Roll20 Character Sheet</a></li>
                     <li><a href="#eqanalyze">Personal: Music EQ Analyzer</a></li>
                     <li><a href="#thiswebsite">Personal: This Website!</a></li>
-                    <li><a href="#schmoopsat">Schmoop: SAT Practice Problems</a></li>
                     <li><a href="#atlasify">NU Research: Atlasify</a></li>
                 </ul>
                 <li><a href="#othercoding">Other Coding Projects</a></li>
@@ -35,9 +39,25 @@
                 </ul>
             </ul>
         </ul>
+        <div id="professional" class="proj-category">
+            <h2>Professional Work</h2>
+            <ul>
+                <li id="vibes" class="proj-title"><h3>Vibes: Mobile Marketing Software Development(2019-present)</h3>
+                <p class="proj-descript">Vibes develops a platform for their customers to be able to organize and send out promotions, offers, and loyalty cards via SMS, MMS, 3rd-party app push notifications, and Mobile Wallet. As a software engineer on the Mobile Wallet team, I maintained the part of the platform responsible for integrating with the Apple Wallet and Google Pay apps, as well as the generation of mobile-friendly web pages leading to offers and loyalty cards and many other uses besides. Various passes and pages are organized into "Campaigns" which collect editable templates for said passes and pages and allow for integration with the SMS/MMS parts of the platform. These features are available through a web UI interface and a multitude of API capabilities. <br>
+                Outcome: I have done work on nearly every part of the suite of Ruby on Rails apps that make up the Mobile Wallet component of the platform, from infrastructure pieces like database work and CI/CD pipelines to the UI seen in the broswer, which uses a combination of plain javascript, Backbone.js, jQuery, and React. This work has included features such as Event-Triggered Notifications, campaign-level passholder data downloads, and an API for creating and updating pass templates as well as the integration of these APIs into our UI. I have also helped to maintain, support, and deploy these applications, as much of the original code was developed 10 years ago and has been kept up to date ever since.
+                </p></li>
+            </ul>
+        </div>
         <div id="webdevproj" class="proj-category">
             <h2>Web Dev Projects</h2>
             <ul>
+                <li id="roll20-armour-astir" class="proj-title"><h3>Personal: Roll20 Character Sheet(2020)</h3>
+                <p class="proj-descript"><a href="https://weregazelle.itch.io/armour-astir">Armour Astir</a> is an independent tabletop role-playing game inspired by anime shows like Gundam and Vision of Escaflowne. It uses the <a href="https://en.wikipedia.org/wiki/Powered_by_the_Apocalypse">Powered by the Apocalypse</a> rule framework as its basis. The intent of this project was to use <a href="https://roll20.net/">Roll20's</a> powerful open-source integration capabilities for creating and playing tabletop role-playing games online in order to assist with running a game of Armour Astir for a group of friends. Specifically, Roll20 allows users with premium accounts to upload custom templates for character sheets in their games. <br>
+                Outcome: The character sheet is up and running! If you want to see my fork of the project with the character sheet, <a href="https://github.com/jamieleibowitz/roll20-character-sheets/compare/master...jamieleibowitz:armour-astir-sheet">look no further!</a> The code was based on another character sheet in the main repository for a game called Blades in the Dark. From this, I was able to create a character sheet that included features such as clickable project clocks, an expanding/collapsing list of moves a player can take along with the ability to automatically roll dice by clicking on a move and add in custom moves, and a separate section specifically for the player's mech. My character sheet also allows you to toggle between to "flavors" of the game, as during its initial development the game had a "high fantasy" setting and a "hard sci-fi" setting. One of the biggest challenges I overcame with this project was the extremely limited javascript capabilities within Roll20 character sheets (for good reason! Letting users execute whatever javascript they want on your site is extremely dangerous). Where I would by default go to javascript for things like toggleable buttons and expanding/collapsing editable lists, the limits here meant that I was doing the same things except using fancy conditional CSS to hide and display elements of the character sheet rather than generating new elements on the fly.</p></li>
+                <figure id="roll20-character-sheet">
+                    <div class="image-container"><img id="roll20-character-sheet" class="molflow-img" src="images/aa-character-sheet-halifax.png" alt="a screencapture of an example character sheet, including sections for moves, character info/traits, stats, playbook, gear, and a toggle between advent and ascent at the top (the high fantasy and hard sci-fi flavors of the game).">
+                    <figcaption>A screencapture of an example character sheet, including sections for moves, character info/traits, stats, playbook, gear, and a toggle between advent and ascent at the top (the high fantasy and hard sci-fi flavors of the game).</figcaption>
+                </figure>
                 <li id="eqanalyze" class="proj-title"><h3>Personal: Music EQ Analyzer (2019)</h3>
                 <p class="proj-descript">This project combines two passions of mine: tech and music. I've produced music for most of my teen and adult life, but I've always felt unsatisfied with my mixing and mastering skills when I put my songs alongside professionally produced ones. This project was intended to help with that by allowing me to plot my music's EQ profile on the same graph as my reference tracks so that I could more closely approach their sound by adjusting my song to more closely match the other's EQ plot.<br>
                 Outcome: This program achieved its purpose of helping me with my music, as well as being a solid demonstration of my ability to code in Python. I gained experience using several well-known modules, such as scipy, numpy, matplotlib, and tkinter. It also required some mathematical knowledge to understand how Fourier Transforms and specifically Fast Fourier Transform functions work, as well as some problem-solving as running a single fft call on large quantities of data in python causes memory errors. The solution was to fourier transform small chunks of the song and then average them to get the overall result. <a target="blank" href="https://github.com/jamieleibowitz/eqanalyzer">Check out the code for my EQ Analyzer on Github!</a> Also, <a target="blank" href="https://soundcloud.com/experimentalsoundlab/the-jacobs-ladder">check out my latest track on Soundcloud!</a></p></li>
@@ -45,9 +65,6 @@
                 <li id="thiswebsite" class="proj-title"><h3>Personal: This Website! (2019)</h3>
                 <p class="proj-descript">This project used my skills in HTML and CSS. I also aimed to provide myself with a way to put all of my various online presences in one place for the purposes of seeking employment and also showing off things that I've done that are unrelated to tech or engineering. <br>
                 Outcome: A website that showcases my ability to create a website and acts as a central repository for projects I'd like to share with potential employers and ways to contact me. Take a look around! Click the links! Find out more about me! Also, <a target="blank" href="https://github.com/jamieleibowitz/personalsite">check out the code for this website on github!</a></p></li>
-                <a class="btt" href="#toc">Back to top</a>
-                <li id="schmoopsat" class="proj-title"><h3>Schmoop: SAT Practice Problems (2013)</h3>
-                <p class="proj-descript">For this part-time position, I used Javascript and HTML to create web pages containing practice math problems to assist with learning high school-level math concepts.<br>Outcome: This position deepened my understanding of object-oriented programming, and also helped me to learn Javascript in a practical and professional setting. </p></li>
                 <a class="btt" href="#toc">Back to top</a>
                 <li id="atlasify" class="proj-title"><h3>NU Research: Atlasify (2013)</h3>
                 <p class="proj-descript">During the summer of 2013, I worked with Douglas Downey and several of his grad students on a program for the visualization of large amounts of data. When I joined, the project had already yielded a published paper, and Professor Downey wanted me to help to expand the types of data visualizations Atlasify could display. <br>
